@@ -8,5 +8,6 @@
         }
     }else{
         include_once "controller/page.php";
+        // echo "day la elsse";
     }
 ?>

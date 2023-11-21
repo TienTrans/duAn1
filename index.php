@@ -1,10 +1,9 @@
 <?php
     extract($_REQUEST);
     if(isset($mod)){
-    header('location: admin/index.php');
+    header('location: admins/index.php');
     
     }else
     header('location: site/index.php');
-    
 
 ?>
