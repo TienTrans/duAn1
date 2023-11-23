@@ -6,13 +6,35 @@
     if(isset($page)){
         switch($page){
             case 'shop':
-                
-
                 include "views/shop.php";
                 break; 
+                case 'category':
+                    include "views/category.php";
+                    break;
+                case 'sp':
+                    include "views/singleproduct.php";
+                    break;
+                case 'login':
+                    include "views/login.php";
+                    break;
+                case 'cart':
+                    include "views/cart.php";
+                    break;
+                case 'contact':
+                    include "views/contact.php";
+                    break;
+                case 'checkout':
+                    include "views/checkout.php";
+                    break;
+
+
+                    
+
+            
             default:
                 include "views/home.php";
                 break;
+
         }}
     ob_end_flush();
     include "views/footer.php";

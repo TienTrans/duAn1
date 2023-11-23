@@ -189,7 +189,7 @@
                     </div>
 
                     <div class="row align-items-center latest_product_inner">
-                        <div class="col-lg-4 col-sm-6">
+                        <a href="?page=sp"><div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
                                 <img src="img/product/product_1.png" alt="">
                                 <div class="single_product_text">
@@ -198,7 +198,7 @@
                                     <a href="#" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div></a>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
                                 <img src="img/product/product_2.png" alt="">
