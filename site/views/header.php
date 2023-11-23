@@ -43,18 +43,13 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../index.php">Trang chủ</a>
+                                    <a class="nav-link" href="?page=home">Trang chủ</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Shop
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                        <a class="dropdown-item" href="category.html"> Của hàng</a>
-                                        <a class="dropdown-item" href="single-product.html">Sản Phẩm</a>
-                                        
-                                    </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="?page=category">Cửa hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="?page=login"> Đăng nhập</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
@@ -88,7 +83,7 @@
                             <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <a href=""><i class="ti-heart"></i></a>
                             <div class="dropdown cart">
-                                <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                                <a class="dropdown-toggle" href="?page=cart" id="navbarDropdown3" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
