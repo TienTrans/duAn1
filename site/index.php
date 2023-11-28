@@ -1,4 +1,5 @@
 <?php
+
     extract($_REQUEST);
     if(isset($mod)){
         switch($mod){
@@ -6,8 +7,8 @@
                 include_once "controller/page.php";
                 break;
         }
-    }else{
+    }
+    else{
         include_once "controller/page.php";
-        // echo "day la elsse";
     }
 ?>

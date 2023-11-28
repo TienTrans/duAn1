@@ -82,6 +82,29 @@
             e.stopImmediatePropagation();
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.edit').on('click', function() {
+            // Lấy dữ liệu sản phẩm từ thuộc tính data
+            var productId = $(this).data('product-id');
+            var productName = $(this).data('product-name');
+            var productQuantity = $(this).data('product-quantity');
+            var productPrice = $(this).data('product-price');
+            var categoryId = $(this).data('category-id');
+
+            // Đổ dữ liệu vào modal
+              $('#productId').val(productId);
+          $('#productName').val(productName);
+          $('#productQuantity').val(productQuantity);
+          $('#productPrice').val(productPrice);
+          $('#categoryId').val(categoryId);
+
+            // Hiển thị modal
+            // $('#ModalUP').modal('show'); 
+        });
+    });
+</script>
 </body>
 
 </html>
