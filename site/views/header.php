@@ -46,7 +46,7 @@
                                     <a class="nav-link" href="?page=home">Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="?page=category">Cửa hàng</a>
+                                    <a class="nav-link" href="?page=product">Cửa hàng</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="?page=login"> Đăng nhập</a>
