@@ -59,7 +59,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
                                         <a class="dropdown-item" href="login.html"> Đăng nhập</a>
                                         <a class="dropdown-item" href="checkout.html">Checkout</a>
-                                        <a class="dropdown-item" href="cart.html">Giỏ hàng</a>
+                                        <a class="dropdown-item" href="?page=cart">Giỏ hàng</a>
                                         <a class="dropdown-item" href="confirmation.html">Xác nhận</a>
 
                                     </div>
