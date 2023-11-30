@@ -8,8 +8,8 @@
             case 'shop':
                 include "views/shop.php";
                 break; 
-                case 'category':
-                    include "views/category.php";
+                case 'product':
+                    include "views/product.php";
                     break;
                 case 'sp':
                     include "views/singleproduct.php";

@@ -46,7 +46,7 @@
                                     <a class="nav-link" href="?page=home">Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="?page=category">Cửa hàng</a>
+                                    <a class="nav-link" href="?page=product">Cửa hàng</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="?page=login"> Đăng nhập</a>
@@ -59,7 +59,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
                                         <a class="dropdown-item" href="login.html"> Đăng nhập</a>
                                         <a class="dropdown-item" href="checkout.html">Checkout</a>
-                                        <a class="dropdown-item" href="cart.html">Giỏ hàng</a>
+                                        <a class="dropdown-item" href="?page=cart">Giỏ hàng</a>
                                         <a class="dropdown-item" href="confirmation.html">Xác nhận</a>
 
                                     </div>
