@@ -13,9 +13,12 @@
                     break;
                 case 'sp':
                     include "views/singleproduct.php";
-                    break;
+                    break;    
                 case 'login':
                     include "views/login.php";
+                    break;
+                case 'register':
+                    include "views/register.php";
                     break;
                 case 'cart':
                     include "views/cart.php";
