@@ -92,6 +92,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../content/frontend/js/jquery.magnific-popup.js"></script>
     <!-- swiper js -->
     <script src="../content/frontend/js/swiper.min.js"></script>
+    <script src="../content/frontend/js/lightslider.min.js"></script>
     <!-- swiper js -->
     <script src="../content/frontend/js/masonry.pkgd.js"></script>
     <!-- particles js -->

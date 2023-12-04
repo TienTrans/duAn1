@@ -9,5 +9,5 @@
         $sql = "SELECT * FROM hinhsanpham WHERE product_id=?";
         return pdo_query_one($sql, $id);
     }
-
+    
 ?>
