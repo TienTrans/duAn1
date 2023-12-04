@@ -4,7 +4,8 @@
     include "../model_DAO/pdo.php";
     include "../model_DAO/product_image.php";
     include "../model_DAO/categorys.php";
-    extract($_REQUEST);    
+    include "../model_DAO/trademark.php";
+    extract($_REQUEST);  
 
         $mod = isset($_GET['mod'])? $_GET['mod'] : "default";
 
