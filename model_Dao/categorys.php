@@ -69,6 +69,7 @@
         $sql = "SELECT * FROM thuonghieu";
         return pdo_query($sql);
     }
+
     // function dm_exist($id = null){
     //     if($id !== null){
     //         $sql = "SELECT count(*) FROM danh_muc WHERE id=?";

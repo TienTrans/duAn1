@@ -93,11 +93,11 @@
                             $main_image=img_select_by_id($id);
                             echo '<div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="../content/hinh/' . $main_image['image'] . '" alt="">
+                                <a href="?page=sp&id='.$id.'"><img src="../content/hinh/' . $main_image['image'] . '" alt=""></a>
                                 <div class="single_product_text">
                                     <h4>'.$Ten.'</h4>
                                     <h3>'.$gia_tien_format.' VND</h3>
-                                    <a href="?page=sp" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
+                                    <a href="?page=sp" <class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                 </div>
                             </div>
                         </div>';
@@ -159,7 +159,7 @@
                            $gia_tien_format = number_format($Gia, 0, ',', '.');
                            $main_image=img_select_by_id($id); 
                             echo ' <div class="single_product_item">
-                            <img src="../content/hinh/' . $main_image['image'] . '" alt="">
+                            <a href="?page=sp&id='.$id.'"><img src="../content/hinh/' . $main_image['image'] . '" alt=""></a>
                             <div class="single_product_text">
                                 <h4>'.$Ten.'</h4>
                                 <h3>'.$gia_tien_format.' VND</h3>

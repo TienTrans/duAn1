@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../content/frontend/css/animate.css">
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="../content/frontend/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../content/frontend/css/lightslider.min.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="../content/frontend/css/all.css">
     <!-- flaticon CSS -->
