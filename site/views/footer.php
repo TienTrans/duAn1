@@ -4,62 +4,50 @@
             <div class="row justify-content-around">
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
-                        <h4>Top Products</h4>
+                        <h4>Về FFF</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Managed Website</a></li>
-                            <li><a href="">Manage Reputation</a></li>
-                            <li><a href="">Power Tools</a></li>
-                            <li><a href="">Marketing Service</a></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Hệ thống cửa hàng</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
-                        <h4>Quick Links</h4>
+                        <h4>Chính sách</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Brand Assets</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Chính sách bảo hành</a></li>
+                            <li><a href="">Chính sách đổi trả</a></li>
+                            <li><a href="">Chi phí vận chuyển</a></li>
+                            <li><a href="">Hình thức thanh toán</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
-                        <h4>Features</h4>
+                        <h4>Hỗ trợ</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Brand Assets</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-2">
-                    <div class="single_footer_part">
-                        <h4>Resources</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="">Guides</a></li>
-                            <li><a href="">Research</a></li>
-                            <li><a href="">Experts</a></li>
-                            <li><a href="">Agencies</a></li>
+                            <li><a href="">Câu hỏi thường gặp</a></li>
+                            <li><a href="">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="">Mua hàng trả góp</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_footer_part">
-                        <h4>Newsletter</h4>
-                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping
+                        <h4>Bảng tin</h4>
+                        <p>Hãy để lại email của bạn để nhận được những ý tưởng trang trí mới và những thông tin, ưu đãi từ Funky Furniture Frenzy
                         </p>
                         <div id="mc_embed_signup">
                             <form target="_blank"
                                 action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                                 method="get" class="subscribe_form relative mail_part">
-                                <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
+                                <input type="email" name="email" id="newsletter-form-email" placeholder="Nhập email"
                                     class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
                                     onblur="this.placeholder = ' Email Address '">
                                 <button type="submit" name="submit" id="newsletter-submit"
-                                    class="email_icon newsletter-submit button-contactForm">subscribe</button>
+                                    class="email_icon newsletter-submit button-contactForm">Đăng ký</button>
                                 <div class="mt-10 info"></div>
                             </form>
                         </div>
@@ -95,29 +83,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!--::footer_part end::-->
 <!-- js/jquery-1.12.1.min.js -->
     <!-- jquery plugins here-->
-    <script src="../../content/frontend/js/jquery-1.12.1.min.js"></script>
+    <script src="../content/frontend/js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
-    <script src="../../content/frontend/js/popper.min.js"></script>
+    <script src="../content/frontend/js/popper.min.js"></script>
     <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../content/frontend/js/bootstrap.min.js"></script>
     <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="../content/frontend/js/jquery.magnific-popup.js"></script>
     <!-- swiper js -->
-    <script src="js/swiper.min.js"></script>
+    <script src="../content/frontend/js/swiper.min.js"></script>
+    <script src="../content/frontend/js/lightslider.min.js"></script>
     <!-- swiper js -->
-    <script src="js/masonry.pkgd.js"></script>
+    <script src="../content/frontend/js/masonry.pkgd.js"></script>
     <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="../content/frontend/js/owl.carousel.min.js"></script>
+    <script src="../content/frontend/js/jquery.nice-select.min.js"></script>
     <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="../content/frontend/js/slick.min.js"></script>
+    <script src="../content/frontend/js/jquery.counterup.min.js"></script>
+    <script src="../content/frontend/js/waypoints.min.js"></script>
+    <script src="../content/frontend/js/contact.js"></script>
+    <script src="../content/frontend/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../content/frontend/js/jquery.form.js"></script>
+    <script src="../content/frontend/js/jquery.validate.min.js"></script>
+    <script src="../content/frontend/js/mail-script.js"></script>
     <!-- custom js -->
-    <script src="js/custom.js"></script>
+    <script src="../content/frontend/js/custom.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha384-qjDGEuN0vO95TbTJK8C5z0z8XBnUqskS0rgrFgvyBJz1lcjJ80ZB5c6SF1j4Jbpg" crossorigin="anonymous"></script>
+
 </body>
