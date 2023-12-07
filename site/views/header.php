@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>aranoz</title>
+    <title>FFF</title>
     <link rel="icon" href="../content/frontend/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../content/frontend/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="../index.php"> <img src="img/logo.png" alt="FFF"> </a>
+                        <a class="navbar-brand" href="../index.php"> <img src="../content/hinh/logo.png" alt="FFF" style="height: 150px;width:150px;"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -52,30 +52,12 @@
                                     <a class="nav-link" href="?page=product">Cửa hàng</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="?page=addcart"> Đăng nhập</a>
+                                    <a class="nav-link" href="blog.html"> Tin tức</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        pages
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                        <a class="dropdown-item" href="login.html"> Đăng nhập</a>
-                                        <a class="dropdown-item" href="checkout.html">Checkout</a>
-                                        <a class="dropdown-item" href="?page=cart">Giỏ hàng</a>
-                                        <a class="dropdown-item" href="confirmation.html">Xác nhận</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html"> Về chúng tôi</a>
+                                </li>
 
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_2"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Tin tức
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                        <a class="dropdown-item" href="blog.html"> Tin tức</a>
-                                    </div>
-                                </li>
                                 
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Liên hệ</a>
@@ -86,9 +68,8 @@
                             <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <a href=""><i class="ti-heart"></i></a>
                             <div class="dropdown cart">
-                                <a class="dropdown-toggle" href="?page=cart" id="navbarDropdown3" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-cart-plus"></i>
+                                <a class="dropdown-toggle" href="?page=addcart" id="navbarDropdown3" role="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
                                 <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="single_product">

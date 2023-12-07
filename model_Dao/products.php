@@ -74,33 +74,43 @@ function spnb_select_all(){
     return pdo_query($sql);
 }
 // Retrieve product information from the POST data
-if (isset($_POST["id"])) {
-    $id = $_POST["id"];
-    $Ten = $_POST["Ten"];
-    $sl = $_POST["sl"];
-    $image = $_POST["hinh"];
-    $Gia = $_POST["Gia"];
+// if (isset($_POST["id"])) {
+//     $id = $_POST["id"];
+//     $Ten = $_POST["Ten"];
+//     $sl = $_POST["sl"];
+//     $image = $_POST["hinh"];
+//     $Gia = $_POST["Gia"];
 
-    // Create an array with product information
-    $san_pham = array(
-        "id" => $id,
-        "Ten" => $Ten,
-        "sl" => $sl,
-        "hinh" => $image,
-        "Gia" => $Gia
-    );
+//     // Create an array with product information
+//     $san_pham = array(
+//         "id" => $id,
+//         "Ten" => $Ten,
+//         "sl" => $sl,
+//         "hinh" => $image,
+//         "Gia" => $Gia
+//     );
 
-    // Add the product to the shopping cart array
-    $_SESSION["giohang"][] = $san_pham;
+//     // Add the product to the shopping cart array
+//     $_SESSION["giohang"][] = $san_pham;
     
+// }
+
+
+function get_product_view(){
+    $sql = "SELECT * FROM sanpham
+    WHERE LuotXem > 0
+    ORDER BY LuotXem DESC";
+
+return pdo_query($sql);
+}
+function get_product_hot(){
+    $sql = "SELECT * FROM sanpham
+    WHERE SoLuongDaBan > 0
+    ORDER BY SoLuongDaBan DESC";
+
+return pdo_query($sql);
 }
 
-
-// function sp_best_seller(){
-//     $sql = "SELECT * FROM sanpham where best_seller = 1";
-
-//     return pdo_query($sql);
-// }
 
 // function spnb_select_all(){
 //     $sql = "SELECT * FROM sanpham where noibat = 1";

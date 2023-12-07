@@ -109,6 +109,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../content/frontend/js/mail-script.js"></script>
     <!-- custom js -->
     <script src="../content/frontend/js/custom.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha384-qjDGEuN0vO95TbTJK8C5z0z8XBnUqskS0rgrFgvyBJz1lcjJ80ZB5c6SF1j4Jbpg" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/86da10215a.js" crossorigin="anonymous"></script>
 </body>

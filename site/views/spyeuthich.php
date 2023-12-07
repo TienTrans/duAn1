@@ -1,7 +1,4 @@
  <!---->
- <?php 
- $total_price = 0;
- ?>
  <ol>
        
     </ol>
@@ -14,8 +11,8 @@
                 <div class="col-md-6 contact-right-content"> -->
                     <!-- left -->
                     <?php 
-                        $giohang = $_SESSION['giohang'] ?? array();
-                        if((isset($_SESSION['giohang']))&&(count($_SESSION['giohang'])>0));
+                        $spyeuthich = $_SESSION['spyeuthich'] ?? array();
+                        if((isset($_SESSION['spyeuthich']))&&(count($_SESSION['spyeuthich'])>0));
                         echo '
                         <section class="cart_area padding_top">
                             <div class="container">
@@ -32,16 +29,10 @@
                                         <th scope="col">xóa</th>
                                     </tr>
                                     </thead>
-                                    <form action="?page=checkout" method="post"> ';
-                                    if (count($_SESSION['giohang']) > 0) {
-                                  foreach ($_SESSION['giohang'] as $index => $item){
+                                    ';
+                                    if (count($_SESSION['spyeuthich']) > 0) {
+                                  foreach ($_SESSION['spyeuthich'] as $index => $item){
                                     extract($item);
-                                    // $tt = $sl * $Gia;
-                                    // $_SESSION['giohang'] = array();
-                                    // $Gia = floatval($item[3]); 
-                                    // $sl = intval($item[4]); 
-                                    // $total_price = $Gia * $sl;
-                                    // $total_price = array_sum($_SESSION['giohang']);
                                     echo '<tbody>
                                         <tr>
                                             <td>
@@ -66,7 +57,7 @@
                                             </td>
                                             
                                             <td>
-                                            <a href="?page=deletecart&index=' . $index . '">xóa</a>
+                                            <a href="?page=deletewish&index=' . $index . '">xóa</a>
                                             </td>                               
                                             </td>
                                         </tr>
@@ -83,8 +74,8 @@
                     ?>
                     <div class="checkout_btn_inner float-right">
             <a class="btn_1" href="?page=product">Tiếp tục mua hàng</a>
-            <button class="btn_1 checkout_btn_1" href="?page=checkout" type="submit" style="border:none;">Thanh toán </button>
-                            </form>
+            
+                            
           </div>
                 <!-- </div>
                 
