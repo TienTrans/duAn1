@@ -115,7 +115,7 @@ MODAL
                         <div class="form-group col-md-6">
                             <label class="control-label">Mã sản phẩm
                             </label>
-                            <input name="productId" id="productId" class="form-control" type="number" />
+                            <input name="productId" id="productId" class="form-control" type="text" />
                         </div>
                         <div class="form-group col-md-6">
                             <label class="control-label">Tên sản phẩm</label>

@@ -10,10 +10,7 @@
                 $ds_dm = dm_select_all(false);
             } else {
                 $ds_dm = dm_select_all();
-            }
-            
-            
-            
+            }    
             include "view/category/page_category_list.php";
             include "view/category/footer_category.php";
             break;
@@ -69,7 +66,6 @@
                 dm_delete($id);
                 header("location:?mod=category&act=list");
                 break;
-            
         }
     }
 ?>

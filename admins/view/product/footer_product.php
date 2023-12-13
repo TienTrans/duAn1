@@ -103,7 +103,7 @@ $(document).ready(function() {
         var numericPrice = parseFloat(unformattedPrice);
 
         // Đổ dữ liệu vào modal
-        $('#product_id').val(productId);
+        $('#productId').val(productId);
         $('#productName').val(productName);
         $('#productQuantity').val(productQuantity);
         $('#productPrice').val(priceFormat);

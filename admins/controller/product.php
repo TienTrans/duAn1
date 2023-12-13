@@ -41,8 +41,7 @@
 
                             move_uploaded_file($tmp_name, $filePath);
                             img_add($id_new, $fileName);
-                            // Lưu đường dẫn của tệp tin vào cơ sở dữ liệu hoặc thực hiện các thao tác khác
-                            // Ví dụ: $filePath có thể được lưu vào cơ sở dữ liệu để sử dụng sau này
+                            
                         }
                     }
 
@@ -62,9 +61,10 @@
 
             case "edit":
                 if(isset($editProduct_submit)){
-                    sp_update($productId, $categoryId, $productName, $productPrice, $productQuantity, $status);
+                    $cleanedPrice = str_replace(['.', '₫'], '', $productPrice);
+                    sp_update($productId, $categoryId, $productName, $cleanedPrice, $productQuantity, $status);
+                    header("location:?mod=product&act=list");
                 }
-                header("location:?mod=product&act=list");
                 break;
                 case 'update':
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
