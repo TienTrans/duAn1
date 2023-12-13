@@ -17,4 +17,8 @@
         
     }
     
+    function img_add($id_product, $img){
+          $sql = "INSERT INTO hinhsanpham (product_id, image) VALUES (?, ?)";
+         pdo_execute($sql, $id_product, $img);
+    }
 ?>

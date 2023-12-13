@@ -41,3 +41,12 @@ function get_product_hot() {
     return pdo_query($sql);
 }
 ?>
+function sp_add($categoryId, $productName, $productPrice, $productQuantity, $status, $discount, $material, $trademark,
+$desc) {
+// Thực hiện truy vấn SQL để thêm sản phẩm vào cơ sở dữ liệu
+$sql = "INSERT INTO sanpham (id_DanhMuc, Ten, Gia, Soluong, TrangThai, KhuyenMai, ChatLieu, id_ThuongHieu,
+ChiTietSanPham) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$id_new = pdo_execute($sql, $categoryId, $productName, $productPrice, $productQuantity, $status, $discount, $material,
+$trademark, $desc);
+return $id_new;
+}
