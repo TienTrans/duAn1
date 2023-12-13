@@ -12,7 +12,7 @@
                 <div class="tile-body">
 
 
-                    <form action="upload.php" method="post" enctype="multipart/form-data" class="row">
+                    <form action="?mod=product&act=add" method="post" enctype="multipart/form-data" class="row">
 
                         <div class="form-group col-md-3">
                             <label class="control-label">Tên sản phẩm</label>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="form-group col-md-3">
                             <label for="exampleSelect1" class="control-label">Danh mục</label>
-                            <select class="form-control" id="exampleSelect1">
+                            <select class="form-control" id="exampleSelect1" name='categoryId'>
                                 <option>-- Chọn danh mục --</option>
                                 <?php 
                                     foreach ($ds_dm_chil as $item) {
@@ -54,13 +54,7 @@
                             <label class="control-label">Khuyến Mãi</label>
                             <input name="discount" class="form-control" type="text">
                         </div>
-                        <div class="form-group col-md-3">
-                            <label class="control-label">Nổi Bật</label>
-                            <select class="form-control" id="exampleSelect1">
-                                <option value='0'>Không</option>
-                                <option value="1">Có</option>
-                            </select>
-                        </div>
+
                         <div class="form-group col-md-3">
                             <label class="control-label">Chất Liệu</label>
                             <input name="material" class="form-control" type="text">
@@ -100,10 +94,10 @@
                             <textarea class="form-control" name="desc" id="mota"></textarea>
 
                         </div>
+                        <button class="btn btn-save" type="submit" name="editProduct_submit">Lưu lại</button>
+                        <a class="btn btn-cancel" href="table-data-product.html">Hủy bỏ</a>
                     </form>
 
                 </div>
-                <button class="btn btn-save" type="button">Lưu lại</button>
-                <a class="btn btn-cancel" href="table-data-product.html">Hủy bỏ</a>
             </div>
 </main>

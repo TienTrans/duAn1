@@ -38,7 +38,7 @@
                                     </li>';
                                     }
                                     ?>
-                                    
+
                                 </ul>
                             </div>
                         </aside>
@@ -58,9 +58,9 @@
                                     </li>';
                                     }
                                     ?>
-                                    
+
                             </div>
-                        </aside>  
+                        </aside>
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -100,6 +100,7 @@
                                     <h3>'.$gia_tien_format.' VND</h3>
                                    
                                     <a href="?page=sp" <class="add_cart">  <input type="submit" name="addtocart" value="+ add to cart"/><i class="ti-heart"></i></a>
+                                    <a href="?page=sp" <class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                 </div>
                                 <input type="hidden" name="hinh" value="'.$main_image['image'].'">
                                 <input type="hidden" name="id" value="'.$id.'">
@@ -114,8 +115,8 @@
                             
                         
                         ?>
-                        
-                        
+
+
 
                         <div class="col-lg-12">
                             <div class="pageination">
@@ -161,7 +162,7 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-12">
                     <div class="best_product_slider owl-carousel">
-                      <?php 
+                        <?php 
                     //    $dssp=sp_best_seller();
                        foreach ($dssp as $item){
                            extract($item);
@@ -175,9 +176,9 @@
                             </div>
                         </div>';
                         }
-                      ?>  
-                       
-                        
+                      ?>
+
+
                     </div>
                 </div>
             </div>
