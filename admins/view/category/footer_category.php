@@ -87,28 +87,18 @@ $('#all').click(function(e) {
 $(document).ready(function() {
     $(document).on('click', '.edit', function() {
         // Lấy dữ liệu sản phẩm từ thuộc tính data
-        var productId = $(this).data('product-id');
-        var productName = $(this).data('product-name');
-        var productQuantity = $(this).data('product-quantity');
-        var productPrice = $(this).data('product-price');
         var categoryId = $(this).data('category-id');
-        var categoryParent = $(this).data('category-parent');
+        var categoryName = $(this).data('category-name');
+        var categoryImage = $(this).data('category-image');
 
-        // Định dạng giá tiền
-        var priceFormat = parseFloat(productPrice).toLocaleString('vi-VN', {
-            style: 'currency',
-            currency: 'VND'
-        });
-        var unformattedPrice = priceFormat.replace(/[.,\sđ]/g, '');
-        var numericPrice = parseFloat(unformattedPrice);
+
+
+        ;
 
         // Đổ dữ liệu vào modal
-        $('#product_id').val(productId);
-        $('#productName').val(productName);
-        $('#productQuantity').val(productQuantity);
-        $('#productPrice').val(priceFormat);
-        $('#categoryIdParent').val(categoryParent);
         $('#categoryId').val(categoryId);
+        $('#categoryName').val(categoryName);
+
 
         // Hiển thị modal
         $('#ModalUP').modal('show');

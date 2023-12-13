@@ -50,6 +50,7 @@
                     header("location:?mod=product&act=list");
                     exit();
                 }
+                
                 include "view/product/page_product_add.php";
                 include "view/product/footer_product.php";
                 break;
@@ -65,11 +66,42 @@
                 }
                 header("location:?mod=product&act=list");
                 break;
-            case 'update':
-                include "view/header.php";
-                include "view/product/page_product_update.php";
-                include "view/product/footer_product.php";
-                break;
+                case 'update':
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST["editProduct_submit_2"])) {
+                        include "view/header.php";
+                        echo $_POST["product_id"];
+                        $sp = sp_select_by_id($_POST["product_id"]);
+                         $ds_dm_chil = dm_select_all(false);
+                        $ds_thuongHieu = trademark_select_all();
+                        $ds_hinh =img_select_all($_POST["product_id"]);
+                        
+                        include "view/product/page_product_update.php";
+                        include "view/product/footer_product.php";
+                        break; 
+                    } else if(isset($_POST["editProduct_submit"])){
+                        sp_update_advanced($productId, $categoryId, $productName, $productPrice, $productQuantity, $status, $trademark, $discount, $material, $desc);
+                         if (isset($_FILES['images']) && !empty($_FILES['images']['name'][0])) {
+                            // Đường dẫn thư mục lưu trữ ảnh
+                            $uploadDir = '../content/hinh/';
+                             img_delete($productId); 
+                            // Duyệt qua từng tệp tin được tải lên
+                            foreach ($_FILES['images']['tmp_name'] as $key => $tmp_name) {
+                                $fileName = $_FILES['images']['name'][$key];
+                                $filePath = $uploadDir . $fileName;
+
+                                move_uploaded_file($tmp_name, $filePath);
+
+                                img_add($productId, $fileName);
+                                // Lưu đường dẫn của tệp tin vào cơ sở dữ liệu hoặc thực hiện các thao tác khác
+                                // Ví dụ: $filePath có thể được lưu vào cơ sở dữ liệu để sử dụng sau này
+                            }
+                        }
+                         header("location:?mod=product&act=list");   
+                        
+                    }
+                }
+                
             case "show":
                 echo "show";
                 break;

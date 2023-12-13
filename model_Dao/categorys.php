@@ -21,11 +21,33 @@
         return pdo_query($sql);
     }
 
+
+    function dm_update($categoryName,$status,$categoryId){
+        $sql = "UPDATE danhmuc SET  Ten_DanhMuc=?, TrangThai=?  WHERE id=?";
+        pdo_execute($sql,$categoryName,$status,$categoryId,);
+    }
+    function dm_update_img($Image,$categoryId){
+        $sql = "UPDATE danhmuc SET  HinhAnh=?  WHERE id=?";
+        pdo_execute($sql,$Image,$categoryId);
+    }
+
     function th_select_all(){
         $sql = "SELECT * FROM thuonghieu";
         return pdo_query($sql);
     }
 
+    function createCategory($categoryName, $parent_id) {
+    $sql = "INSERT INTO danhmuc (Ten_DanhMuc,  parent_id) VALUES (?, ?)";
+    pdo_execute($sql, $categoryName, $parent_id);
+}
+    function createCategory_image($categoryName, $parent_id , $image) {
+    $sql = "INSERT INTO danhmuc (Ten_DanhMuc,  parent_id , HinhAnh) VALUES (?, ?, ?)";
+    pdo_execute($sql, $categoryName, $parent_id ,$image);
+}
+    function dm_delete($id_dm){
+        $sql = "DELETE FROM danhmuc WHERE id = ?";
+        pdo_execute($sql, $id_dm);
+    }
     // function dm_exist($id = null){
     //     if($id !== null){
     //         $sql = "SELECT count(*) FROM danh_muc WHERE id=?";

@@ -12,36 +12,12 @@
                     <div class="row element-button">
                         <div class="col-sm-2">
 
-                            <a class="btn btn-add btn-sm" href="form-add-san-pham.html" title="Thêm"><i
+                            <a class="btn btn-add btn-sm" href="?mod=product&act=add" title="Thêm"><i
                                     class="fas fa-plus"></i>
                                 Tạo mới sản phẩm</a>
                         </div>
-                        <div class="col-sm-2">
-                            <a class="btn btn-delete btn-sm nhap-tu-file" type="button" title="Nhập"
-                                onclick="myFunction(this)"><i class="fas fa-file-upload"></i> Tải từ file</a>
-                        </div>
 
-                        <div class="col-sm-2">
-                            <a class="btn btn-delete btn-sm print-file" type="button" title="In"
-                                onclick="myApp.printTable()"><i class="fas fa-print"></i> In dữ liệu</a>
-                        </div>
-                        <div class="col-sm-2">
-                            <a class="btn btn-delete btn-sm print-file js-textareacopybtn" type="button"
-                                title="Sao chép"><i class="fas fa-copy"></i> Sao chép</a>
-                        </div>
 
-                        <div class="col-sm-2">
-                            <a class="btn btn-excel btn-sm" href="" title="In"><i class="fas fa-file-excel"></i> Xuất
-                                Excel</a>
-                        </div>
-                        <div class="col-sm-2">
-                            <a class="btn btn-delete btn-sm pdf-file" type="button" title="In"
-                                onclick="myFunction(this)"><i class="fas fa-file-pdf"></i> Xuất PDF</a>
-                        </div>
-                        <div class="col-sm-2">
-                            <a class="btn btn-delete btn-sm" type="button" title="Xóa" onclick="myFunction(this)"><i
-                                    class="fas fa-trash-alt"></i> Xóa tất cả </a>
-                        </div>
                     </div>
                     <table class="table table-hover table-bordered" id="sampleTable">
                         <thead>
@@ -123,9 +99,10 @@ MODAL
 -->
 <div class="modal fade" id="ModalUP" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
     data-keyboard="false">
-    <form method="POST" action="?mod=product&act=edit" enctype="multipart/form-data">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <form method="POST" action="?mod=product&act=edit" enctype="multipart/form-data">
                 <div class="modal-body">
                     <div class="row">
                         <div class="form-group col-md-12">
@@ -178,11 +155,8 @@ MODAL
                         </div>
                     </div>
                     <br />
-                    <a href="#" style="
-                                float: right;
-                                font-weight: 600;
-                                color: #ea0000;
-                            ">Chỉnh sửa sản phẩm nâng cao</a>
+
+
                     <br />
                     <br />
                     <button class="btn btn-save" type="submit" name="editProduct_submit">
@@ -191,8 +165,23 @@ MODAL
                     <a class="btn btn-cancel" data-dismiss="modal" href="#">Hủy bỏ</a>
                     <br />
                 </div>
-                <div class="modal-footer"></div>
-            </div>
+            </form>
+            <form method="post" action="?mod=product&act=update">
+                <!-- Input để nhận giá trị ID -->
+                <input type="number" id="product_id" name="product_id" hidden>
+
+                <!-- Nút submit -->
+                <button type="submit" style="
+                    float: right;
+                    font-weight: 600;
+                    color: #ea0000;
+                    border: none;
+                    background-color: inherit;
+                " name="editProduct_submit_2">Chỉnh sửa sản phẩm nâng cao</button>
+            </form>
+            <div class="modal-footer"></div>
         </div>
-    </form>
+    </div>
+
+
 </div>
