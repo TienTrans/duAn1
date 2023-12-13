@@ -15,7 +15,6 @@
         $sql = "SELECT * FROM danhmuc WHERE id=?";
         return pdo_query_one($sql, $id);
     }
-<<<<<<< HEAD
 
     function dm_main_select_all(){
         $sql = "SELECT * FROM danhmuc WHERE parent_id=0";
@@ -26,6 +25,7 @@
         $sql = "SELECT * FROM thuonghieu";
         return pdo_query($sql);
     }
+
     // function dm_exist($id = null){
     //     if($id !== null){
     //         $sql = "SELECT count(*) FROM danh_muc WHERE id=?";
@@ -36,7 +36,5 @@
     //     }
         
     // }
-=======
->>>>>>> c313248 (tien-code-admin-2)
     
 ?>

@@ -92,30 +92,37 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-7 col-sm-6">
                     <div class="single_feature_post_text">
-                        <h3>Latest foam Sofa</h3>
+                        <h3>Ghế</h3>
                         <a href="#" class="feature_btn">Khám phá ngay <i class="fas fa-play"></i></a>
-                        <img src="../content/frontend/img/feature/feature_1.png" alt="">
+                        <img src="../content/hinh/ghe.jpg" style="height: 420px; width:460px" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-6">
                     <div class="single_feature_post_text">
-                        <h3>Latest foam Sofa</h3>
+                        <h3>Bàn</h3>
                         <a href="#" class="feature_btn">Khám phá ngay <i class="fas fa-play"></i></a>
-                        <img src="../content/frontend/img/feature/feature_2.png" alt="">
+                        <img src="../content/hinh/ban.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-6">
                     <div class="single_feature_post_text">
-                        <h3>Latest foam Sofa</h3>
+                        <h3>Sofa</h3>
                         <a href="#" class="feature_btn">Khám phá ngay <i class="fas fa-play"></i></a>
-                        <img src="../content/frontend/img/feature/feature_3.png" alt="">
+                        <img src="../content/hinh/ghe.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-lg-7 col-sm-6">
+                <div class="col-lg-5 col-sm-6">
                     <div class="single_feature_post_text">
-                        <h3>Latest foam Sofa</h3>
+                        <h3>Giường</h3>
                         <a href="#" class="feature_btn">Khám phá ngay <i class="fas fa-play"></i></a>
-                        <img src="../content/frontend/img/feature/feature_4.png" alt="">
+                        <img src="../content/hinh/ghe.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="single_feature_post_text">
+                        <h3>Đèn</h3>
+                        <a href="#" class="feature_btn">Khám phá ngay <i class="fas fa-play"></i></a>
+                        <img src="../content/hinh/ghe.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -138,170 +145,27 @@
                     <div class="product_list_slider owl-carousel">
                         <div class="single_product_list_slider">
                             <div class="row align-items-center justify-content-between">
-                                <div class="col-lg-3 col-sm-6">
+                                <?php 
+                                 $spnb=get_product_hot();
+                                 foreach ($spnb as $item){
+                                     extract($item);
+                                     $gia_tien_format = number_format($Gia, 0, ',', '.');
+                                     $main_image=img_select_by_id($id);
+                                     echo ' <div class="col-lg-3 col-sm-6">
                                     <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_1.png" alt="">
+                                    
+                                    <a href="?page=sp&id='.$id.'"><img src="../content/hinh/' . $main_image['image'] . '" alt=""></a>
                                         <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
+                                            <h4>'.$Ten.'</h4>
+                                            <h3>'.$gia_tien_format.' VND</h3>
                                             <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_2.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_3.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_4.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_5.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_6.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_7.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_8.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_product_list_slider">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_1.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_2.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_3.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_4.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_5.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_6.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_7.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single_product_item">
-                                        <img src="../content/frontend/img/product/product_8.png" alt="">
-                                        <div class="single_product_text">
-                                            <h4>Quartz Belt Watch</h4>
-                                            <h3>2 000 000 VND</h3>
-                                            <a href="#" class="add_cart">Thêm vào giỏ<i class="ti-heart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div>';
+
+                                 }
+                                ?>
+                               
                             </div>
                         </div>
                     </div>
@@ -357,41 +221,23 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-12">
                     <div class="best_product_slider owl-carousel">
-                        <div class="single_product_item">
-                            <img src="../content/frontend/img/product/product_1.png" alt="">
+                      <?php 
+                       $spbc=get_product_view();
+                       foreach ($spbc as $item){
+                           extract($item);
+                           $gia_tien_format = number_format($Gia, 0, ',', '.');
+                           $main_image=img_select_by_id($id); 
+                            echo ' <div class="single_product_item">
+                            <a href="?page=sp&id='.$id.'"><img src="../content/hinh/' . $main_image['image'] . '" alt=""></a>
                             <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
+                                <h4>'.$Ten.'</h4>
+                                <h3>'.$gia_tien_format.' VND</h3>
                             </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="../content/frontend/img/product/product_2.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="../content/frontend/img/product/product_3.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="../content/frontend/img/product/product_4.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
-                        <div class="single_product_item">
-                            <img src="../content/frontend/img/product/product_5.png" alt="">
-                            <div class="single_product_text">
-                                <h4>Quartz Belt Watch</h4>
-                                <h3>$150.00</h3>
-                            </div>
-                        </div>
+                        </div>';
+                        }
+                      ?>  
+                       
+                        
                     </div>
                 </div>
             </div>

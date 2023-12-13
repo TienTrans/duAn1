@@ -93,12 +93,21 @@
                             $main_image=img_select_by_id($id);
                             echo '<div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="../content/hinh/' . $main_image['image'] . '" alt="">
+                                <form action="?page=addcart" method="post">
+                                <a href="?page=sp&id='.$id.'"><img src="../content/hinh/' . $main_image['image'] . '" alt=""></a>
                                 <div class="single_product_text">
                                     <h4>'.$Ten.'</h4>
                                     <h3>'.$gia_tien_format.' VND</h3>
-                                    <a href="?page=sp" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
+                                   
+                                    <a href="?page=sp" <class="add_cart">  <input type="submit" name="addtocart" value="+ add to cart"/><i class="ti-heart"></i></a>
                                 </div>
+                                <input type="hidden" name="hinh" value="'.$main_image['image'].'">
+                                <input type="hidden" name="id" value="'.$id.'">
+                                <input type="hidden" name="Ten" value="'.$Ten.'">
+                                <input type="hidden" name="Gia" value="'.$gia_tien_format.'">
+                                
+                                <a href="?page=wishlist" class="like_us" name="spyeuthich"> <i class="ti-heart"></i> </a>
+                            </form>
                             </div>
                         </div>';
                         }
@@ -153,13 +162,13 @@
                 <div class="col-lg-12">
                     <div class="best_product_slider owl-carousel">
                       <?php 
-                       $dssp=sp_best_seller();
+                    //    $dssp=sp_best_seller();
                        foreach ($dssp as $item){
                            extract($item);
                            $gia_tien_format = number_format($Gia, 0, ',', '.');
                            $main_image=img_select_by_id($id); 
                             echo ' <div class="single_product_item">
-                            <img src="../content/hinh/' . $main_image['image'] . '" alt="">
+                            <a href="?page=sp&id='.$id.'"><img src="../content/hinh/' . $main_image['image'] . '" alt=""></a>
                             <div class="single_product_text">
                                 <h4>'.$Ten.'</h4>
                                 <h3>'.$gia_tien_format.' VND</h3>

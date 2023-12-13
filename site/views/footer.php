@@ -92,6 +92,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../content/frontend/js/jquery.magnific-popup.js"></script>
     <!-- swiper js -->
     <script src="../content/frontend/js/swiper.min.js"></script>
+    <script src="../content/frontend/js/lightslider.min.js"></script>
     <!-- swiper js -->
     <script src="../content/frontend/js/masonry.pkgd.js"></script>
     <!-- particles js -->
@@ -108,4 +109,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../content/frontend/js/mail-script.js"></script>
     <!-- custom js -->
     <script src="../content/frontend/js/custom.js"></script>
+    <script src="https://kit.fontawesome.com/86da10215a.js" crossorigin="anonymous"></script>
 </body>
